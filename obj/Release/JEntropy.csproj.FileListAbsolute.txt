@@ -3,3 +3,8 @@ C:\data\Projects\Entropy\JEntropy\bin\Release\JEntropy.exe
 C:\data\Projects\Entropy\JEntropy\bin\Release\JEntropy.pdb
 C:\data\Projects\Entropy\JEntropy\obj\Release\JEntropy.exe
 C:\data\Projects\Entropy\JEntropy\obj\Release\JEntropy.pdb
+C:\data\Projects\GitRepos\Entropy\JEntropy\bin\Release\JEntropy.exe.config
+C:\data\Projects\GitRepos\Entropy\JEntropy\obj\Release\JEntropy.exe
+C:\data\Projects\GitRepos\Entropy\JEntropy\obj\Release\JEntropy.pdb
+C:\data\Projects\GitRepos\Entropy\JEntropy\bin\Release\JEntropy.exe
+C:\data\Projects\GitRepos\Entropy\JEntropy\bin\Release\JEntropy.pdb

@@ -21,7 +21,6 @@ namespace JEntropy
             if (args.Length != 1)
                 Console.WriteLine("Usage:  JEntropy filename");
 
-          
             string fname = args[0];
             if (File.Exists(fname))
             {
@@ -29,7 +28,7 @@ namespace JEntropy
                 Console.Write("Entropy = " + ShannonEntropy(fname));
                 DateTime tend = DateTime.Now;
                 TimeSpan t = tend.Subtract(tstart);
-                Console.Write("     time: " + t.TotalSeconds.ToString("0.000") + " seconds");
+                Console.Write("     time: " + t.TotalSeconds.ToString("0.000") + " seconds ");
             }
             else
                 Console.Write("File does not exist: " + fname);
@@ -38,19 +37,18 @@ namespace JEntropy
 /// <summary>
 /// computes entropy for a file
 /// </summary>
-/// <param name="filename">string filename</param>
+/// <param name="filename">string filename (full path)</param>
 /// <returns>bits of entropy in all bytes of the file</returns>
         public static double ShannonEntropy(string filename)
         {
-            int bufferLength = 32768;  // read and process data in 32K chunks
+            int bufferLength = 65536;  // read and process data in 64K chunks
             long[] map = new long[256];
 
-            FileStream fs = new FileStream(filename, FileMode.Open, FileAccess.Read,FileShare.ReadWrite,bufferLength);
+            FileStream fs = new FileStream(filename, FileMode.Open, FileAccess.Read,FileShare.None,bufferLength);
+
             long flength = fs.Length;
             
             Byte[] fBuffer = new Byte[bufferLength];
-            for (int i = 0; i < bufferLength; i++)   // make sure each buffer is clear
-                fBuffer[i] = 0;
               
             int count = 0;
             do
@@ -63,6 +61,8 @@ namespace JEntropy
                     map[fBuffer[i]]++;
 
             } while (true);
+
+            fs.Close();
 
             double result = 0.0;
             double frequency;
