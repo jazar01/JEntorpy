@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JEntropy", "JEntropy.csproj", "{DFDCADBA-9B91-4BE4-BB0F-E74C7CB792C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JChiSquare", "..\JChiSquare\JChiSquare.csproj", "{C974827A-61DF-4839-A33F-69278ABA3E10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DFDCADBA-9B91-4BE4-BB0F-E74C7CB792C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFDCADBA-9B91-4BE4-BB0F-E74C7CB792C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFDCADBA-9B91-4BE4-BB0F-E74C7CB792C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C974827A-61DF-4839-A33F-69278ABA3E10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C974827A-61DF-4839-A33F-69278ABA3E10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C974827A-61DF-4839-A33F-69278ABA3E10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C974827A-61DF-4839-A33F-69278ABA3E10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
