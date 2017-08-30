@@ -41,28 +41,29 @@ namespace JEntropy
 /// <returns>bits of entropy in all bytes of the file</returns>
         public static double ShannonEntropy(string filename)
         {
-            int bufferLength = 65536;  // read and process data in 64K chunks
-            long[] map = new long[256];
-
-            FileStream fs = new FileStream(filename, FileMode.Open, FileAccess.Read,FileShare.None,bufferLength);
-
-            long flength = fs.Length;
+            const int bufferLength = 65536;  // read and process data in 64K chunks
+            uint[] map = new uint[256];
             
-            Byte[] fBuffer = new Byte[bufferLength];
+            FileStream fs = new FileStream(filename, FileMode.Open, FileAccess.Read,FileShare.None,bufferLength,FileOptions.SequentialScan);
+            BinaryReader br = new BinaryReader(fs);
+            long flength = fs.Length;
+
+            byte[] fBuffer = new byte[bufferLength];
               
-            int count = 0;
-            do
+            int count = 1;
+            while (true)
             {
-                count = fs.Read(fBuffer, 0, bufferLength);  // fill buffer from file
+                count = br.Read(fBuffer, 0, bufferLength);
                 if (count <= 0)     // got nothing, EOF, done
                     break;
- 
+                
+
                 for (int i = 0; i < count; i++)  // iterate through buffer and update map counts
                     map[fBuffer[i]]++;
 
-            } while (true);
+            }  
 
-            fs.Close();
+            br.Close();
 
             double result = 0.0;
             double frequency;

@@ -7,3 +7,6 @@ C:\data\Projects\Entropy\JEntropy\obj\Debug\JEntropy.pdb
 C:\data\Projects\GitRepos\Entropy\JEntropy\bin\Debug\JEntropy.exe.config
 C:\data\Projects\GitRepos\Entropy\JEntropy\obj\Debug\JEntropy.exe
 C:\data\Projects\GitRepos\Entropy\JEntropy\obj\Debug\JEntropy.pdb
+C:\data\Projects\GitRepos\Entropy\JEntropy\bin\Debug\JEntropy.exe
+C:\data\Projects\GitRepos\Entropy\JEntropy\bin\Debug\JEntropy.pdb
+C:\data\Projects\GitRepos\Entropy\JEntropy\obj\Debug\JEntropy.csprojResolveAssemblyReference.cache

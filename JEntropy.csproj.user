@@ -4,6 +4,6 @@
     <StartArguments>test.txt</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartArguments>TestX1</StartArguments>
+    <StartArguments>c:\Temp\test\TestX1</StartArguments>
   </PropertyGroup>
 </Project>

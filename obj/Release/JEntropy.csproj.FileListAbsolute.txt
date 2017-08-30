@@ -8,3 +8,4 @@ C:\data\Projects\GitRepos\Entropy\JEntropy\obj\Release\JEntropy.exe
 C:\data\Projects\GitRepos\Entropy\JEntropy\obj\Release\JEntropy.pdb
 C:\data\Projects\GitRepos\Entropy\JEntropy\bin\Release\JEntropy.exe
 C:\data\Projects\GitRepos\Entropy\JEntropy\bin\Release\JEntropy.pdb
+C:\data\Projects\GitRepos\Entropy\JEntropy\obj\Release\JEntropy.csprojResolveAssemblyReference.cache
